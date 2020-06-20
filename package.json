@@ -1,7 +1,17 @@
 {
   "name": "nodejs-setup",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/app.ts",
   "author": "Felipe Barros <felipetech@tuta.io>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/server.js",
+    "start:dev": "ts-node-dev --no-notify --ignore-watch node_modules --respawn --transpileOnly src/server.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.49",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {}
 }
