@@ -1,0 +1,7 @@
+{
+  "name": "nodejs-setup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Felipe Barros <felipetech@tuta.io>",
+  "license": "MIT"
+}
