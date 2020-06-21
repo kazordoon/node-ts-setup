@@ -1,14 +1,4 @@
-/* eslint-disable import/first */
-import dotenv from 'dotenv'
-
-if (process.env.NODE_ENV === 'development') {
-  dotenv.config()
-} else if (process.env.NODE_ENV === 'test') {
-  dotenv.config({
-    path: '.env.test'
-  })
-}
-
+import './config/env'
 import app from './app'
 
 app.listen(app.get('PORT'), app.get('HOST'), () => {
