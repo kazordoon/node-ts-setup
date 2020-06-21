@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node dist/server.js",
-    "start:dev": "ts-node-dev -r tsconfig-paths/register --no-notify --ignore-watch node_modules --respawn --transpileOnly src/server.ts",
+    "start:dev": "NODE_ENV=development ts-node-dev -r tsconfig-paths/register --no-notify --ignore-watch node_modules --respawn --transpileOnly src/server.ts",
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
-    "test": "jest"
+    "test": "NODE_ENV=test jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.3",
