@@ -1,4 +1,4 @@
-import User from '@models/User'
+import User from '@contracts/User'
 import { Request, Response } from 'express'
 
 class UsersController {
